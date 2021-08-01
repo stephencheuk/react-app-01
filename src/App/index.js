@@ -5,11 +5,10 @@ import { Fragment } from 'react';
 
 import NormalizeStyles from './NormalizeStyles';
 import BaseStyles from './BaseStyles';
-//import Toast from './Toast';
+import Toast from './Toast';
 //import Routes from './Routes';
 //const NormalizeStyles = () => (<>NormalizeStyles</>);
 //const BaseStyles = () => (<>BaseStyles</>);
-const Toast = () => (<>Toast</>);
 const Routes = () => (<>Routes</>);
 
 const App = () => (

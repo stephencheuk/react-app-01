@@ -50,10 +50,12 @@ const generateField = FormComponent => {
   return FieldComponent;
 };
 
-export default {
+const exportedObject = {
   Input: generateField(Input),
   Select: generateField(Select),
   Textarea: generateField(Textarea),
   TextEditor: generateField(TextEditor),
   DatePicker: generateField(DatePicker),
 };
+
+export default exportedObject;
