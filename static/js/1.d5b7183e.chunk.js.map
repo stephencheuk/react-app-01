@@ -1,0 +1,1 @@
+{"version":3,"sources":["Pages/Users/Users.js"],"names":["Users"],"mappings":"yHAAA,yFAMeA,UAJD,WACZ,OAAO","file":"static/js/1.d5b7183e.chunk.js","sourcesContent":["import React from 'react';\r\n\r\nconst Users = () => {\r\n  return <>Page for Users</>\r\n};\r\n\r\nexport default Users;"],"sourceRoot":""}

@@ -1,0 +1,2 @@
+(this.webpackJsonpapp01=this.webpackJsonpapp01||[]).push([[1],{"./src/Pages/Users/Users.js":function(s,e,r){"use strict";r.r(e);r("./node_modules/react/index.js");var n=r("./node_modules/react/jsx-runtime.js");e.default=function(){return Object(n.jsx)(n.Fragment,{children:"Page for Users"})}}}]);
+//# sourceMappingURL=1.d5b7183e.chunk.js.map
