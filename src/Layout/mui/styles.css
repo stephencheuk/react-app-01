@@ -1,0 +1,68 @@
+.LayoutHeader{
+  position: fixed;
+  top: 0;
+  left: 200px;
+  width: 100vw;
+  height: 64px;
+  border: 1px solid white;
+  background-color: lightblue;
+  z-index: 1001;
+  transition: left 1s;
+}
+
+.NavMin.LayoutHeader,
+.NavMin .LayoutHeader
+{
+  left: 60px;
+}
+
+.NavHide.LayoutHeader,
+.NavHide .LayoutHeader
+{
+  left: 0px;
+}
+
+.LayoutNav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  border: 1px solid green;
+  background-color: lightgoldenrodyellow;
+  transition: width 1s;
+}
+
+.NavMin.LayoutNav,
+.NavMin .LayoutNav
+{
+  width: 64px;
+}
+
+.NavHide.LayoutNav,
+.NavHide .LayoutNav
+{
+  margin-left: -200px;
+}
+
+.LayoutBody{
+  border: 1px solid red;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  margin-top: 64px;
+  margin-left: 200px;
+  transition: margin-left 1s;
+}
+
+.NavMin.LayoutBody,
+.NavMin .LayoutBody
+{
+  margin-left: 60px;
+}
+
+.NavHide.LayoutBody,
+.NavHide .LayoutBody
+{
+  margin-left: 0px;
+}
