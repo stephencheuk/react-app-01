@@ -17,6 +17,7 @@ $color-alto: #D3D3D3;
 $height-header: 50px;
 $height-footer: 50px;
 $width-sidenav: 240px;
+$width-mini-sidenav: 48px;
 
 @mixin profile-avatar {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1609106/headshot.png");
@@ -75,6 +76,7 @@ a {
     'footer';
   height: 100vh;
   overflow-x: hidden; // Prevent overflow scroll from hidden sidenav
+  transition: all 1s;
 
   &--noscroll {
     overflow-y: hidden;
@@ -87,13 +89,14 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: $color-catskill-white;
+  transition: all .6s ease-in-out;
 
   &__menu {
-    position: fixed; // Needs to stay visible for all mobile scrolling
+/*    position: fixed; // Needs to stay visible for all mobile scrolling*/
     padding: 13px;
     left: 12px;
-    background-color: $color-mischka;
-    border-radius: 50%;
+    -background-color: $color-mischka;
+    -border-radius: 50%;
     z-index: 1;
 
     &:hover {
@@ -213,6 +216,7 @@ a {
   transition: all .6s ease-in-out;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   z-index: 2; // Needs to sit above the hamburger menu icon
+  overflow: hidden;
 
   &__brand {
     position: relative;
@@ -391,6 +395,7 @@ a {
   grid-area: main;
   background-color: $color-athens-gray;
   color: $color-fiord;
+  transition: all .6s ease-in-out;
 
   &__cards {
     display: block;
@@ -805,6 +810,7 @@ a {
       'sidenav main'
       'sidenav footer';
     height: 100vh;
+	transition: all 1s;
   }
 
   .sidenav {
@@ -824,7 +830,7 @@ a {
 
   .header {
     &__menu {
-      display: none;
+/*      display: none;*/
     }
 
     &__search {
@@ -836,6 +842,16 @@ a {
       height: 40px;
     }
   }
+
+  .closed {
+    &.grid{
+	  grid-template-columns: 48px calc(100% - 48px);
+	}
+    & .sidenav{
+	  width: $width-mini-sidenav;
+	}
+  }
+
 }
 
 // Medium screens breakpoint (1050px)

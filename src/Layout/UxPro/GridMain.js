@@ -2,6 +2,8 @@
 const main = (props) => {
   return (
       <main className="main">
+        MAIN HERE
+  { /*
         <div className="main-header">
           <div className="main-header__intro-wrapper">
             <div className="main-header__welcome">
@@ -70,12 +72,12 @@ const main = (props) => {
               <p className="overviewCard-subtitle">House Concert</p>
             </div>
           </div>
-        </div> { /*<!-- /.main__overview -->*/ }
+        </div> { / *<!-- /.main__overview -->* / }
         <div className="main__cards">
           <div className="card">
             <div className="card__header">
               <div className="card__header-title text-light">Your <strong>Events</strong>
-                <a href="#" className="card__header-link text-bold">View All</a>
+                { / * <a href="#" className="card__header-link text-bold">View All</a> * / }
               </div>
               <div className="settings">
                 <div className="settings__block"><i className="fas fa-edit"></i></div>
@@ -143,7 +145,7 @@ const main = (props) => {
           <div className="card">
             <div className="card__header">
               <div className="card__header-title text-light">Recent <strong>Documents</strong>
-                <a href="#" className="card__header-link text-bold">View All</a>
+                { / * <a href="#" className="card__header-link text-bold">View All</a> * / }
               </div>
               <div className="settings">
                 <div className="settings__block"><i className="fas fa-edit"></i></div>
@@ -178,7 +180,7 @@ const main = (props) => {
           <div className="card card--finance">
             <div className="card__header">
               <div className="card__header-title text-light">Monthly <strong>Spending</strong>
-                <a href="#" className="card__header-link text-bold">View All</a>
+                { / * <a href="#" className="card__header-link text-bold">View All</a> * / }
               </div>
               <div className="settings">
                 <div className="settings__block"><i className="fas fa-edit"></i></div>
@@ -187,7 +189,8 @@ const main = (props) => {
             </div>
             <div id="chartdiv"></div>
           </div>
-        </div> { /* <!-- /.main-cards --> */ }
+        </div> { / * <!-- /.main-cards --> * / }
+  */ }
       </main>
     );
 }

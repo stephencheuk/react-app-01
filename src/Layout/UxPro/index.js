@@ -1,19 +1,28 @@
+import { useState } from 'react';
+import clsx from 'clsx';
+
 import './styles.scss';
 
-import header from './header';
-import sidenav from './sidenav';
-import main from './main';
-import footer from './footer';
+import GridHeader from './GridHeader';
+import GridSideNav from './GridSideNav';
+import GridMain from './GridMain';
+import GridFooter from './GridFooter';
 
 
 const Layout = (props) => {
 
+  const [close, setClose] = useState(false);
+
+  const toggleClose = () => {
+    setClose(!close);
+  }
+
   return (
-    <div class="grid">
-      <header />
-      <sidenav />
-      <main />
-      <footer />
+    <div className={ clsx("grid", close && 'closed') }>
+      <GridHeader toggleClose={ toggleClose } />
+      <GridSideNav />
+      <GridMain />
+      <GridFooter />
     </div>
   );
 };

@@ -10,7 +10,7 @@ import Users from 'Pages/Users';
 
 const Project = () => <>Project</>;
 const Authenticate = () => <>Authenticate</>;
-const PageError = () => <>PageError</>;
+const PageError = () => <>404 Page Not Found</>;
 
 const Routes = () => (
   <Router history={history}>

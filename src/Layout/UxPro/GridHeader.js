@@ -1,8 +1,12 @@
 
 const header = (props) => {
+
   return (
       <header className="header">
-        <i className="fas fa-bars header__menu"></i>
+        <button onClick={ e => props.toggleClose() }><i className="fas fa-bars header__menu"></i></button>
+        HEADER HERE
+        { /*
+        <button onClick={ e => props.toggleClose() }>CLICK</button>
         <div className="header__search">
           <input className="header__input" placeholder="Search..." />
         </div>
@@ -24,6 +28,7 @@ const header = (props) => {
             </ul>
           </div>
         </div>
+        */ }
       </header>
     );
 }

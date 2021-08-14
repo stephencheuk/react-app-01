@@ -121,6 +121,7 @@ export default createGlobalStyle`
   [type="radio"] {
     box-sizing: border-box;
     padding: 0;
+    appearance: 'auto';
   }
   [type="number"]::-webkit-inner-spin-button,
   [type="number"]::-webkit-outer-spin-button {
